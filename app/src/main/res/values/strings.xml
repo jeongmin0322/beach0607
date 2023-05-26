@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">btm</string>
+    <string name="title_home">Home</string>
+    <string name="title_guide">Guide</string>
+    <string name="title_post">Post</string>
+    <string name="title_my">My</string>
+</resources>
