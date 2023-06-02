@@ -27,7 +27,8 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"/>
-
+        <activity android:name=".ui.post.DetailActivity"/>
+        <activity android:name=".ui.post.RegisterActivity"/>
         <activity android:name=".Home_Gwanganri"/>
     </application>
 
