@@ -14,7 +14,6 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
@@ -50,22 +49,6 @@ public class PostFragment extends Fragment {
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-
-        setContentView(R.layout.fragment_post);
-        final String[] mid = {"네이버","다음","구글","티스토리","계발에서 개발까지"};
-
-        ListView list = listView.findViewById(R.id.listView);
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(requireActivity(), android.R.layout.simple_list_item_1, mid);
-
-        list.setAdapter(adapter);
-
-        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Toast.makeText(requireContext(), mid[position], Toast.LENGTH_SHORT).show();
-            }
-        });
         PostViewModel postViewModel =
                 new ViewModelProvider(this).get(PostViewModel.class);
 
@@ -96,10 +79,6 @@ public class PostFragment extends Fragment {
         });
 
         return root;
-    }
-
-    private void setContentView(int fragment_post) {
-
     }
 
     @Override

@@ -30,6 +30,7 @@
         <activity android:name=".ui.post.DetailActivity"/>
         <activity android:name=".ui.post.RegisterActivity"/>
         <activity android:name=".Home_Gwanganri"/>
+
     </application>
 
 </manifest>
