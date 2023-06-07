@@ -11,7 +11,7 @@
     <ListView
         android:id="@+id/listView"
         android:layout_width="match_parent"
-        android:layout_height="450dp"></ListView>
+        android:layout_height="440dp"></ListView>
 
     <Button
         android:id="@+id/reg_button"
